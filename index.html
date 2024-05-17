@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran MI-ALMASHURIYAH</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .logo-container {
+            display: flex;
+            align-items: center; /* Untuk mengatur vertikal ke tengah */
+        }
+
+        .logo {
+            width: 100px; /* Sesuaikan dengan ukuran logo Anda */
+            margin-right: 10px; /* Jarak antara logo dan teks */
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div class="logo-container">
+        <img src="./assets/Logo.jpg" alt="Logo MI-ALMASHURIYAH" class="logo">
+        <h1>MI-ALMASHURIYAH</h1>
+    </div>
+</section>
+
+<!-- Header Section -->
+<header class="bg-success text-white text-center py-3">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#registration">Registration</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Sosial Media">Sosial Media</a></li>             
+            </ul>
+          </nav>          
+    </div>
+    <div class="hero">
+        <div class="container">
+            <h1>Selamat datang di Pendaftaran Siswa Baru</h1>
+        </div>
+    </div>
+</header>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Tentang Kami</h2>
+            <p class="text-center">MI-ALMASHURIYAH adalah madrasah ibtidaiyah yang berkomitmen untuk mendidik siswa-siswinya menjadi generasi yang berakhlak mulia dan berprestasi.</p>
+        </div>
+    </section>
+
+    <section id="registration" class="bg-light py-5">
+        <div class="container">
+          <h2>Formulir Pendaftaran</h2>
+          <form id="registrationForm" action="#" method="POST">
+            <div class="form-group">
+              <label for="nama">Nama Lengkap:</label>
+              <input type="text" class="form-control" id="nama" name="nama" required>
+            </div>
+            <div class="form-group">
+              <label for="alamat">Alamat:</label>
+              <textarea id="alamat" name="alamat" class="form-control" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="tgl_lahir">Tanggal Lahir:</label>
+              <input type="date" class="form-control" id="tgl_lahir" name="tgl_lahir" required>
+            </div>
+            <div class="form-group">
+              <label>Jenis Kelamin:</label><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki" required>
+                <label class="form-check-label" for="laki_laki">Laki-laki</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+                <label class="form-check-label" for="perempuan">Perempuan</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="asal_sekolah">Asal Sekolah:</label>
+              <input type="text" class="form-control" id="asal_sekolah" name="asal_sekolah" required>
+            </div>
+            <div class="form-group">
+              <h4>Mengetahui Informasi Ini Darimana?</h4>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="minat1" name="minat[]" value="Youtube">
+                <label class="form-check-label" for="Youtube">Youtube</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="minat2" name="minat[]" value="Facebook">
+                <label class="form-check-label" for="Facebook">Facebook</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="minat3" name="minat[]" value="Instagram">
+                <label class="form-check-label" for="Instagram">Instagram</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="minat4" name="minat[]" value="Teman">
+                <label class="form-check-label" for="Teman">Teman</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="minat4" name="minat[]" value="Tetangga">
+                <label class="form-check-label" for="Tetangga">Tetangga</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="minat4" name="minat[]" value="Saudara">
+                <label class="form-check-label" for="Saudara">Saudara</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="minat4" name="minat[]" value="Alumni">
+                <label class="form-check-label" for="Alumni">Alumni</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="minat4" name="minat[]" value="Lainnya">
+                <label class="form-check-label" for="Lainnya">Lainnya</label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-success" id="daftarButton">Daftar</button>
+            <button type="button" class="btn btn-secondary" id="resetButton">Reset Form</button>
+          </form>
+        </div>
+      </section>
+      
+    <!-- Contact Section -->
+    <section id="Sosial Media" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Sosial Media Kami</h2>
+            <p class="text-center">Untuk informasi lebih lanjut, kunjungi sosial media kami:</p>
+            <div class="text-center">
+                <a href="https://www.facebook.com/profile.php?id=61551747284847&mibextid=ZbWKwL" target="_blank" class="social-media-link">
+                    Facebook
+                </a> |
+                <a href="https://www.instagram.com/mialmanshuriyahsmi?igsh=MW01NWk4MWFhenNjOA==" target="_blank" class="social-media-link">
+                    Instagram
+                </a> |
+                <a href="https://youtube.com/@mial-manshuriyah?si=ny__FaicSSh91Md1" target="_blank" class="social-media-link">
+                    YouTube
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>     
+</body>
+</html>
